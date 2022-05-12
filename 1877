@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int c1;
+    int c2;
+    cin >> c1;
+    cin >> c2;
+    if (((c2 % 2) != 0) or ((c1 % 2) == 0)) {
+        cout << "yes";
+    }
+     else
+        cout << "no";
+}
