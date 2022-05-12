@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int f;
+    int c;
+    int t;
+    cin >> f;
+    if ((f >= 1) and (f<= 11)) {
+        c = 12 - f;
+        t = c * 45;
+        if(t<=(4*60))
+            cout<<"YES";
+        else
+            cout << "NO";
+    }
+}
