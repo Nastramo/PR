@@ -1,0 +1,26 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    
+    int v;
+    cin >> v;
+    if (v < 1) {
+        
+        cout << ((v-2)*(v + 1))/-2;
+             
+        
+         
+    }
+    if (v >= 1) {
+        
+        cout << (v * (v+1))/2;
+       
+        
+    }
+
+
+}
