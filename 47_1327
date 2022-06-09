@@ -1,0 +1,15 @@
+include <iostream>
+using namespace std;
+
+int main() {
+	int* a =new int[1];
+	a[0] = 0;
+	int x, y;
+	cin >> x>>y;
+	for (int i =x; i <= y; i++) {
+		if(i%2!=0)
+		a[0] ++;
+	}
+	cout << a[0];
+	delete a;
+}
