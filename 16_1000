@@ -1,13 +1,10 @@
 #include <iostream> 
 using namespace std;
+
 int main() {
-	int x;
-	int* c = new int [1];
-	c[0]=1;
-	for (int i = 0; i < 3; i++) {
-		cin >> x;
-		c[0] = c[0]* x;
-	}
-	cout << c[0]*2;
-	delete c;
+	int *x = new int[2];
+	int* a = x;
+	int* b = x;
+	cin >> a[0] >> b[1];
+	cout << a[0] + b[1];
 }
