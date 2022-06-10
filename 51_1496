@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    int n, f = 0;
+    cin >> n;
+    string* s = new string[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> s[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (s[i] == s[j] and i != j) {
+                s[j] = " ";
+                f = 1;
+            }
+
+        }
+        if (f == 1 and s[i] != " ") {
+            cout << s[i] << endl;
+        }
+        s[i] = " ";
+        f = 0;
+    }
+}
