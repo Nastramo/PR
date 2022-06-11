@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    int a, b, c, d, f;
+    cin >> a >> b >> c >> d;
+        if (a <= c)
+        {
+            while (a <= c)
+            {
+                if (a + b <= c)
+                {
+                a = a + b;
+                f = a;
+                }
+                else { 
+                f = c; 
+                break; 
+                }
+
+                if (c - d >= a)
+                {
+                c = c - d;
+                f = c;
+                }
+                else {
+                f = a; 
+                break; 
+                }
+        }
+        cout << f << endl;
+    }
+    else
+        cout << a << endl;
+}
