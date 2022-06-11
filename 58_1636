@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int t1,t2, f;
+    cin >> t1>>t2;
+    for (int i = 0; i < 10; i++) {
+        cin >> f;
+        if (f > 0) {
+            t1 += f * 20;
+        }
+     }
+    if (t1 <= t2)
+        cout << "No chance.";
+    if (t1 > t2)
+        cout << "Dirty debug :(";
+}
