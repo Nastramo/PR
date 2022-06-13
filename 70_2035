@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x,y,c;
+	cin >>x>>y>>c;
+	if (c > y + x) {
+		cout << "Impossible";
+	}
+	else if (y >= c)
+		cout << 0 << " " << c;
+	else {
+		if (c - min(x, y)<=y)
+			cout << min(x, y) << " " << c- min(x, y);
+		else
+			cout << c - min(x, y)  << " " << min(x, y);
+	}
+}
