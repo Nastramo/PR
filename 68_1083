@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+	int n,n1,k,k1;
+	string s;
+	cin >> n;
+	getline(cin, s);
+	k = s.length()-1;
+	n1 = n;
+	k1 = k;
+	while ((n1 - k) > 0){
+		n *= (n1 - k);
+		k += k1;
+	}
+	cout << n;
+}
