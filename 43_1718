@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, p = 0, s = 0, h = 0;
+    cin >> n;
+    int* m2 = new int[n];
+    for (int i = 0; i < n; i++) {
+        cin >> m2[i];
+        h += m2[i];
+        if (m2[i] == 3)
+            p++;
+        if (m2[i] == 5)
+            s++;
+    }
+    if (p > 0)
+        cout << "None";
+    else if (s == n)
+        cout << "Named";
+    else if (float(h) / float(n) >= 4.5)
+        cout << "High";
+    else
+        cout << "Common";
+    delete m2;
+}
