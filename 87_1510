@@ -1,0 +1,20 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+    long long n, k, num;
+    int f = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> k;
+        if (f == 0) {
+            num = k;
+            f++;
+        }
+        else if (k == num)
+            f++;
+        else
+            f--;
+    }
+    cout << num;
+}
